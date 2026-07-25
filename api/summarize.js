@@ -38,7 +38,7 @@ export default async function handler(req, res) {
       }];
     }
 
-    const model = type === 'image' ? 'llama-3.2-11b-vision-preview' : 'llama-3.3-70b-versatile';
+    const model = type === 'image' ? 'meta-llama/llama-4-scout-17b-16e-instruct' : 'llama-3.3-70b-versatile';
 
     const groqResp = await fetch('https://api.groq.com/openai/v1/chat/completions', {
       method: 'POST',
