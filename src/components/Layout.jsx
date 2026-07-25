@@ -1,6 +1,7 @@
 import { Outlet, NavLink, useNavigate } from 'react-router-dom'
 import { useState } from 'react'
 import { supabase } from '../lib/supabase'
+import logoUrl from '../assets/logo.svg'
 
 const ADMIN_EMAIL = 'laquima6@gmail.com'
 
@@ -46,13 +47,14 @@ export default function Layout({ user }) {
       <div style={{ display:'none', position:'fixed',top:0,left:0,right:0,height:56,background:'#1e1b4b',zIndex:98,alignItems:'center',padding:'0 16px',gap:12 }} className="mobile-header">
         <button onClick={() => setSidebarOpen(!sidebarOpen)}
           style={{ background:'none',border:'none',color:'#fff',fontSize:22,cursor:'pointer' }}>☰</button>
-        <span style={{ fontSize:18,fontWeight:800,background:'linear-gradient(135deg,#818cf8,#c4b5fd)',WebkitBackgroundClip:'text',WebkitTextFillColor:'transparent' }}>futurAI</span>
+        <img src={logoUrl} alt="futurAI" style={{ width:32, height:32, borderRadius:'50%' }} /><span style={{ fontSize:18,fontWeight:800,background:'linear-gradient(135deg,#818cf8,#c4b5fd)',WebkitBackgroundClip:'text',WebkitTextFillColor:'transparent' }}>futurAI</span>
       </div>
 
       {/* Sidebar */}
       <aside className={`sidebar ${sidebarOpen ? 'open' : ''}`}>
         <div className="sidebar-logo">
-          <div className="sidebar-logo-title">🎓 futurAI</div>
+          <img src={logoUrl} alt="futurAI" style={{ width:48, height:48, borderRadius:'50%', objectFit:'cover' }} />
+          <div className="sidebar-logo-title">futurAI</div>
           <div className="sidebar-logo-sub">Tu asistente universitario</div>
         </div>
 

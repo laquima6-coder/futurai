@@ -1,6 +1,8 @@
 import { useState } from 'react'
 import { supabase } from '../lib/supabase'
 
+import logoUrl from '../assets/logo.svg'
+
 export default function Login() {
   const [mode, setMode] = useState('login')
   const [email, setEmail] = useState('')
@@ -40,6 +42,7 @@ export default function Login() {
     <div className="login-page">
       <div className="login-card">
         <div className="login-logo">
+          <img src={logoUrl} alt="futurAI" style={{ width:90, height:90, borderRadius:'50%', marginBottom:12, boxShadow:'0 4px 20px rgba(99,102,241,0.3)' }} />
           <div style={{ fontSize:48, marginBottom:8 }}>🎓</div>
           <div className="login-logo-title">futurAI</div>
           <div className="login-logo-sub">Tu asistente universitario con IA</div>
