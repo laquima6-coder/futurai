@@ -1,46 +1,151 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" fill="none">
-  <circle cx="60" cy="60" r="58" fill="url(#bg)" />
-  <ellipse cx="60" cy="90" rx="22" ry="16" fill="#8b5cf6" opacity="0.9"/>
-  <path d="M42 82 Q50 75 60 74 Q70 75 78 82 L80 105 Q60 110 40 105 Z" fill="#a78bfa"/>
-  <rect x="56" y="62" width="8" height="10" rx="3" fill="#fcd5b4"/>
-  <ellipse cx="60" cy="52" rx="16" ry="17" fill="#fcd5b4"/>
-  <path d="M44 50 Q44 32 60 30 Q76 32 76 50 Q72 38 60 37 Q48 38 44 50 Z" fill="#7c3aed"/>
-  <path d="M44 50 Q40 56 42 64 Q44 58 48 56 Z" fill="#7c3aed"/>
-  <path d="M76 50 Q80 56 78 64 Q76 58 72 56 Z" fill="#7c3aed"/>
-  <ellipse cx="44" cy="52" rx="5" ry="8" fill="#7c3aed"/>
-  <ellipse cx="76" cy="52" rx="5" ry="8" fill="#7c3aed"/>
-  <ellipse cx="54" cy="52" rx="3" ry="3.5" fill="white"/>
-  <ellipse cx="66" cy="52" rx="3" ry="3.5" fill="white"/>
-  <circle cx="55" cy="53" r="2" fill="#4c1d95"/>
-  <circle cx="67" cy="53" r="2" fill="#4c1d95"/>
-  <circle cx="55.8" cy="52.2" r="0.7" fill="white"/>
-  <circle cx="67.8" cy="52.2" r="0.7" fill="white"/>
-  <path d="M54 59 Q60 63 66 59" stroke="#c084fc" stroke-width="1.5" stroke-linecap="round" fill="none"/>
-  <path d="M42 78 Q32 72 30 62" stroke="#fcd5b4" stroke-width="7" stroke-linecap="round" fill="none"/>
-  <rect x="18" y="54" width="18" height="22" rx="2" fill="#6366f1"/>
-  <rect x="18" y="54" width="9" height="22" rx="2" fill="#818cf8"/>
-  <line x1="27" y1="54" x2="27" y2="76" stroke="#4338ca" stroke-width="1"/>
-  <line x1="20" y1="60" x2="25" y2="60" stroke="white" stroke-width="1" opacity="0.6"/>
-  <line x1="20" y1="63" x2="25" y2="63" stroke="white" stroke-width="1" opacity="0.6"/>
-  <line x1="20" y1="66" x2="25" y2="66" stroke="white" stroke-width="1" opacity="0.6"/>
-  <line x1="29" y1="60" x2="34" y2="60" stroke="white" stroke-width="1" opacity="0.6"/>
-  <line x1="29" y1="63" x2="34" y2="63" stroke="white" stroke-width="1" opacity="0.6"/>
-  <line x1="29" y1="66" x2="34" y2="66" stroke="white" stroke-width="1" opacity="0.6"/>
-  <path d="M78 78 Q88 72 90 62" stroke="#fcd5b4" stroke-width="7" stroke-linecap="round" fill="none"/>
-  <rect x="84" y="50" width="14" height="24" rx="3" fill="#1e293b"/>
-  <rect x="86" y="53" width="10" height="16" rx="1" fill="#38bdf8"/>
-  <rect x="87" y="54" width="8" height="2" rx="0.5" fill="white" opacity="0.7"/>
-  <rect x="87" y="57" width="6" height="1" rx="0.5" fill="white" opacity="0.5"/>
-  <rect x="87" y="59" width="7" height="1" rx="0.5" fill="white" opacity="0.5"/>
-  <circle cx="91" cy="72" r="1.5" fill="#334155"/>
-  <path d="M95 35 L96.5 38 L100 39.5 L96.5 41 L95 44 L93.5 41 L90 39.5 L93.5 38 Z" fill="#fbbf24" opacity="0.9"/>
-  <path d="M20 35 L21 37 L23 38 L21 39 L20 41 L19 39 L17 38 L19 37 Z" fill="#34d399" opacity="0.9"/>
-  <circle cx="105" cy="55" r="3" fill="#f472b6" opacity="0.7"/>
-  <circle cx="15" cy="60" r="2" fill="#60a5fa" opacity="0.7"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 280" fill="none">
+  <!-- Book cover background -->
+  <rect width="200" height="280" rx="8" fill="url(#coverBg)"/>
+  
+  <!-- Decorative top band -->
+  <rect width="200" height="50" rx="8" fill="url(#topBand)"/>
+  <rect y="42" width="200" height="8" fill="#7c3aed" opacity="0.5"/>
+  
+  <!-- Title -->
+  <text x="100" y="28" font-family="Arial, sans-serif" font-size="26" font-weight="900" 
+        text-anchor="middle" fill="white" letter-spacing="2">futurAI</text>
+  <text x="100" y="42" font-family="Arial, sans-serif" font-size="9" font-weight="500"
+        text-anchor="middle" fill="#e9d5ff" letter-spacing="1">TU ASISTENTE UNIVERSITARIO</text>
+
+  <!-- Decorative stars top -->
+  <path d="M20 18 L21.2 21.6 L25 23 L21.2 24.4 L20 28 L18.8 24.4 L15 23 L18.8 21.6 Z" fill="#fbbf24" opacity="0.9"/>
+  <circle cx="175" cy="20" r="3" fill="#f9a8d4" opacity="0.8"/>
+  <circle cx="183" cy="30" r="2" fill="#a5f3fc" opacity="0.7"/>
+
+  <!-- Main illustration area -->
+  <!-- Background circle glow -->
+  <circle cx="100" cy="160" r="80" fill="#7c3aed" opacity="0.12"/>
+
+  <!-- Ground/shadow -->
+  <ellipse cx="100" cy="240" rx="55" ry="8" fill="#5b21b6" opacity="0.2"/>
+
+  <!-- Girl body / dress -->
+  <path d="M72 195 Q75 175 100 172 Q125 175 128 195 L132 245 Q100 252 68 245 Z" fill="url(#dress)"/>
+  <!-- Dress detail -->
+  <path d="M85 185 Q100 180 115 185 L118 210 Q100 215 82 210 Z" fill="#a78bfa" opacity="0.5"/>
+  <!-- Dress bottom ruffle -->
+  <path d="M68 245 Q80 240 90 245 Q100 250 110 245 Q120 240 132 245" stroke="#c4b5fd" stroke-width="2" fill="none"/>
+
+  <!-- Neck -->
+  <rect x="96" y="158" width="8" height="14" rx="4" fill="#fcd5b4"/>
+
+  <!-- Head -->
+  <ellipse cx="100" cy="142" rx="20" ry="21" fill="#fcd5b4"/>
+
+  <!-- Hair back -->
+  <ellipse cx="100" cy="135" rx="21" ry="18" fill="#6d28d9"/>
+  <!-- Hair front / bangs -->
+  <path d="M80 135 Q80 118 100 115 Q120 118 120 135 Q115 122 100 120 Q85 122 80 135 Z" fill="#5b21b6"/>
+  <!-- Side hair -->
+  <ellipse cx="80" cy="142" rx="6" ry="10" fill="#6d28d9"/>
+  <ellipse cx="120" cy="142" rx="6" ry="10" fill="#6d28d9"/>
+  <!-- Hair highlight -->
+  <path d="M90 118 Q100 115 108 120" stroke="#8b5cf6" stroke-width="2" stroke-linecap="round" fill="none" opacity="0.6"/>
+
+  <!-- Ears -->
+  <ellipse cx="80" cy="143" rx="3.5" ry="4" fill="#f5c4a0"/>
+  <ellipse cx="120" cy="143" rx="3.5" ry="4" fill="#f5c4a0"/>
+
+  <!-- Eyes -->
+  <ellipse cx="92" cy="142" rx="4" ry="4.5" fill="white"/>
+  <ellipse cx="108" cy="142" rx="4" ry="4.5" fill="white"/>
+  <circle cx="93" cy="143" r="2.8" fill="#3730a3"/>
+  <circle cx="109" cy="143" r="2.8" fill="#3730a3"/>
+  <circle cx="93.8" cy="141.8" r="1" fill="white"/>
+  <circle cx="109.8" cy="141.8" r="1" fill="white"/>
+  <!-- Eyelashes -->
+  <path d="M88 138 Q89 136 90 137" stroke="#3730a3" stroke-width="0.8" fill="none"/>
+  <path d="M92 137 Q92 135 93 136" stroke="#3730a3" stroke-width="0.8" fill="none"/>
+  <path d="M104 137 Q105 135 106 136" stroke="#3730a3" stroke-width="0.8" fill="none"/>
+  <path d="M108 138 Q110 136 111 137" stroke="#3730a3" stroke-width="0.8" fill="none"/>
+
+  <!-- Rosy cheeks -->
+  <circle cx="85" cy="150" r="5" fill="#f9a8d4" opacity="0.4"/>
+  <circle cx="115" cy="150" r="5" fill="#f9a8d4" opacity="0.4"/>
+
+  <!-- Smile -->
+  <path d="M92 153 Q100 158 108 153" stroke="#e879a0" stroke-width="1.8" stroke-linecap="round" fill="none"/>
+
+  <!-- Left arm + book -->
+  <path d="M76 178 Q62 168 55 152" stroke="#fcd5b4" stroke-width="9" stroke-linecap="round" fill="none"/>
+  <path d="M76 178 Q62 168 55 152" stroke="#f5c4a0" stroke-width="7" stroke-linecap="round" fill="none"/>
+
+  <!-- Book in left hand -->
+  <rect x="38" y="138" width="24" height="30" rx="3" fill="#4f46e5"/>
+  <rect x="38" y="138" width="12" height="30" rx="3" fill="#6366f1"/>
+  <rect x="40" y="138" width="2" height="30" fill="#3730a3" opacity="0.5"/>
+  <line x1="50" y1="138" x2="50" y2="168" stroke="#3730a3" stroke-width="1.5"/>
+  <!-- Book spine detail -->
+  <rect x="38" y="138" width="3" height="30" fill="#3730a3" opacity="0.6"/>
+  <!-- Book text lines -->
+  <line x1="42" y1="146" x2="48" y2="146" stroke="white" stroke-width="1" opacity="0.7"/>
+  <line x1="42" y1="150" x2="48" y2="150" stroke="white" stroke-width="1" opacity="0.5"/>
+  <line x1="42" y1="154" x2="46" y2="154" stroke="white" stroke-width="1" opacity="0.5"/>
+  <line x1="52" y1="146" x2="59" y2="146" stroke="white" stroke-width="1" opacity="0.7"/>
+  <line x1="52" y1="150" x2="59" y2="150" stroke="white" stroke-width="1" opacity="0.5"/>
+  <line x1="52" y1="154" x2="58" y2="154" stroke="white" stroke-width="1" opacity="0.5"/>
+  <!-- Book cover star -->
+  <path d="M49 141 L50 143.5 L52.5 144.5 L50 145.5 L49 148 L48 145.5 L45.5 144.5 L48 143.5 Z" fill="#fbbf24" opacity="0.9"/>
+
+  <!-- Right arm + phone -->
+  <path d="M124 178 Q138 168 145 152" stroke="#fcd5b4" stroke-width="9" stroke-linecap="round" fill="none"/>
+  <path d="M124 178 Q138 168 145 152" stroke="#f5c4a0" stroke-width="7" stroke-linecap="round" fill="none"/>
+
+  <!-- Phone in right hand -->
+  <rect x="138" y="136" width="18" height="32" rx="4" fill="#0f172a"/>
+  <rect x="140" y="140" width="14" height="22" rx="2" fill="url(#screen)"/>
+  <!-- Phone notch -->
+  <rect x="144" y="137" width="6" height="2" rx="1" fill="#1e293b"/>
+  <!-- Phone screen content -->
+  <rect x="141" y="142" width="12" height="2" rx="1" fill="white" opacity="0.8"/>
+  <rect x="141" y="146" width="9" height="1.5" rx="0.5" fill="white" opacity="0.5"/>
+  <rect x="141" y="149" width="10" height="1.5" rx="0.5" fill="white" opacity="0.5"/>
+  <rect x="141" y="152" width="7" height="1.5" rx="0.5" fill="white" opacity="0.5"/>
+  <!-- App icons on screen -->
+  <rect x="141" y="156" width="4" height="4" rx="1" fill="#f472b6" opacity="0.9"/>
+  <rect x="147" y="156" width="4" height="4" rx="1" fill="#34d399" opacity="0.9"/>
+  <!-- Phone home bar -->
+  <rect x="144" y="166" width="6" height="1.5" rx="0.75" fill="#334155"/>
+
+  <!-- Floating elements -->
+  <!-- Stars -->
+  <path d="M155 105 L156.5 109 L161 110.5 L156.5 112 L155 116 L153.5 112 L149 110.5 L153.5 109 Z" fill="#fbbf24" opacity="0.9"/>
+  <path d="M30 110 L31 113 L34 114 L31 115 L30 118 L29 115 L26 114 L29 113 Z" fill="#34d399" opacity="0.8"/>
+  <!-- Dots -->
+  <circle cx="165" cy="135" r="4" fill="#f9a8d4" opacity="0.7"/>
+  <circle cx="28" cy="145" r="3" fill="#93c5fd" opacity="0.7"/>
+  <circle cx="170" cy="155" r="2.5" fill="#a5f3fc" opacity="0.6"/>
+  <!-- Small sparkles -->
+  <path d="M148 125 L149 127 L151 128 L149 129 L148 131 L147 129 L145 128 L147 127 Z" fill="#c4b5fd" opacity="0.8"/>
+  <path d="M42 120 L43 122 L45 123 L43 124 L42 126 L41 124 L39 123 L41 122 Z" fill="#fde68a" opacity="0.8"/>
+
+  <!-- Bottom subtitle -->
+  <rect y="258" width="200" height="22" fill="#5b21b6" opacity="0.8"/>
+  <text x="100" y="272" font-family="Arial, sans-serif" font-size="8" font-weight="600"
+        text-anchor="middle" fill="#e9d5ff" letter-spacing="1.5">PARA ESTUDIANTES UNIVERSITARIOS</text>
+
   <defs>
-    <radialGradient id="bg" cx="50%" cy="40%" r="60%">
-      <stop offset="0%" stop-color="#ede9fe"/>
+    <linearGradient id="coverBg" x1="0" y1="0" x2="200" y2="280" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#f0e6ff"/>
+      <stop offset="50%" stop-color="#ede9fe"/>
       <stop offset="100%" stop-color="#ddd6fe"/>
-    </radialGradient>
+    </linearGradient>
+    <linearGradient id="topBand" x1="0" y1="0" x2="200" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#6d28d9"/>
+      <stop offset="100%" stop-color="#7c3aed"/>
+    </linearGradient>
+    <linearGradient id="dress" x1="0" y1="172" x2="0" y2="252" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#7c3aed"/>
+      <stop offset="100%" stop-color="#8b5cf6"/>
+    </linearGradient>
+    <linearGradient id="screen" x1="140" y1="140" x2="154" y2="162" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0ea5e9"/>
+      <stop offset="100%" stop-color="#6366f1"/>
+    </linearGradient>
   </defs>
 </svg>
