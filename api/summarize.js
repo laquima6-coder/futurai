@@ -20,25 +20,20 @@ export default async function handler(req, res) {
   const GROQ_API_KEY = process.env.GROQ_API_KEY;
   if (!GROQ_API_KEY) return res.status(500).json({ error: 'API key no configurada' });
 
+  // Images require a vision API — Groq removed vision models, so we only support text/PDF/Word
+  if (type === 'image') {
+    return res.status(400).json({ error: 'El análisis de imágenes no está disponible actualmente. Subí un PDF o documento Word para resumir.' });
+  }
+
   try {
     let messages;
 
-    if (type === 'image' && imageBase64) {
-      messages = [{
-        role: 'user',
-        content: [
-          { type: 'text', text: 'Analiza esta imagen y hace un resumen detallado en español. Si hay texto, transcribilo. Si hay un diagrama o tabla, explicalo.' },
-          { type: 'image_url', image_url: { url: imageBase64 } }
-        ]
-      }];
-    } else {
-      messages = [{
-        role: 'user',
-        content: `Sos un asistente academico. Resume el siguiente texto de forma clara y estructurada en español. Incluí: puntos clave, ideas principales y conceptos importantes.\n\n${text}`
-      }];
-    }
+    messages = [{
+      role: 'user',
+      content: `Sos un asistente academico. Resume el siguiente texto de forma clara y estructurada en español. Incluí: puntos clave, ideas principales y conceptos importantes.\n\n${text}`
+    }];
 
-    const model = type === 'image' ? 'meta-llama/llama-4-scout-17b-16e-instruct' : 'llama-3.3-70b-versatile';
+    const model = 'llama-3.3-70b-versatile';
 
     const groqResp = await fetch('https://api.groq.com/openai/v1/chat/completions', {
       method: 'POST',
