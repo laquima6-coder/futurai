@@ -16,6 +16,7 @@ import Biblioteca from './pages/Biblioteca'
 import MapaConceptual from './pages/MapaConceptual'
 import Traductor from './pages/Traductor'
 import Resumidor from './pages/Resumidor'
+import BuscadorLibros from './pages/BuscadorLibros'
 import Perfil from './pages/Perfil'
 import AdminPanel from './pages/AdminPanel'
 
@@ -75,6 +76,7 @@ export default function App() {
           <Route path="mapa" element={<MapaConceptual user={user} />} />
           <Route path="traductor" element={<Traductor user={user} />} />
           <Route path="resumidor" element={<Resumidor user={user} />} />
+          <Route path="libros" element={<BuscadorLibros user={user} />} />
           <Route path="perfil" element={<Perfil user={user} />} />
           <Route path="admin" element={<AdminRoute user={user}><AdminPanel user={user} /></AdminRoute>} />
         </Route>

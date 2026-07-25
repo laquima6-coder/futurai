@@ -1,4 +1,5 @@
 import { useState, useRef } from 'react'
+import { supabase } from '../lib/supabase'
 
 const ACCEPTED_TYPES = {
   'application/pdf': 'PDF',
@@ -110,9 +111,11 @@ export default function Resumidor({ user }) {
       }
 
       setProgress('Generando resumen con IA...')
+      const { data: { session } } = await supabase.auth.getSession()
+      const token = session?.access_token || ''
       const resp = await fetch('/api/summarize', {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
+        headers: { 'Content-Type': 'application/json', 'Authorization': `Bearer ${token}` },
         body: JSON.stringify(payload)
       })
       const data = await resp.json()

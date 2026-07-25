@@ -16,6 +16,7 @@ const navItems = [
   { to: '/ocr', icon: '📷', label: 'OCR (foto → texto)', section: 'herramientas' },
   { to: '/traductor', icon: '🌐', label: 'Traductor', section: 'herramientas' },
   { to: '/resumidor', icon: '🤖', label: 'Resumidor IA', section: 'herramientas' },
+  { to: '/libros', icon: '📚', label: 'Buscador de Libros', section: 'herramientas' },
   { to: '/qr', icon: '🔲', label: 'Generador de QR', section: 'herramientas' },
   { to: '/biblioteca', icon: '📚', label: 'Biblioteca', section: 'herramientas' },
   { to: '/mapa', icon: '🧠', label: 'Mapas conceptuales', section: 'herramientas' },
